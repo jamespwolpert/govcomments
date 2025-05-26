@@ -5,7 +5,7 @@ import { searchForNewData } from "@/db/queries";
 import { useState } from "react";
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import React from "react";
-import {Pagination} from "../Pagination/page";
+import {Pagination} from "../Pagination/Pagination";
 import AnimatedGradientBackground from "../AnimatedGradientBackground/AnimatedGradientBackground";
 import { useRef } from 'react';
 import gsap from 'gsap';

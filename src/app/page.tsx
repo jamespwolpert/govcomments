@@ -1,7 +1,7 @@
 'use server'
 import {searchForNewData } from "@/db/queries";
-import { Search } from "./components/Search/page";
-import Table from "./components/Table/page";
+import { Search } from "./components/Search/Search";
+import Table from "./components/Table/Table";
 import AnimatedGradientBackground from "./components/AnimatedGradientBackground/AnimatedGradientBackground";
 import { Suspense, use } from "react";
 
