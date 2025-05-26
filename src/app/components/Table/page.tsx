@@ -1,6 +1,6 @@
 import { searchForNewData } from "@/db/queries"
 
-import Pagination from "../Pagination/page";
+import {Pagination} from "../Pagination/page";
 import { TableCell } from "../TableCell/page";
 
 interface Props {

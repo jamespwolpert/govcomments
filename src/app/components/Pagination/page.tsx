@@ -8,7 +8,7 @@ interface Props {
     term: string
 }
 
-export default function Pagination(props: Props) {
+export function Pagination(props: Props) {
     const params = useSearchParams();
       const pathname = usePathname();
       const router = useRouter();
