@@ -1,0 +1,46 @@
+.full-value {
+    background: var(--primary);
+    position: relative;
+    display:none;
+    width: 100%;
+    height: auto;
+    color: black;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--border-main);
+    opacity: 0;
+    scale: 1;
+    transition: opacity 240ms ease allow-discrete, display 240ms ease allow-discrete, scale 240ms ease allow-discrete;
+
+
+
+
+}
+.full-value-visibility-toggle svg {flex-shrink: 0;}
+.full-value-visibility-toggle {transition: opacity 0.22s ease;}
+.full-value-visibility-toggle:hover {
+    opacity: 1;
+}
+
+
+
+.table-cell-wrapper { cursor: pointer }
+
+.table-cell-wrapper:hover .reveal-full-value svg {opacity: 1;}
+ .table-cell-wrapper:hover .full-value {
+        display:flex;
+        opacity: 1;
+        scale: 1.1;
+        box-shadow: 0 12px 24px 0px rgba(0,0,0,0.6);
+        transition: opacity 240ms 999ms ease allow-discrete, display 240ms 999ms ease allow-discrete, scale 240ms 999ms ease allow-discrete;
+
+
+
+    @starting-style{
+        opacity: 0;
+        scale: 1;
+    }
+
+ }
+
+ 
