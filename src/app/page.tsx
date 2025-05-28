@@ -4,6 +4,8 @@ import { Search } from "./components/Search/Search";
 import Table from "./components/Table/Table";
 import AnimatedGradientBackground from "./components/AnimatedGradientBackground/AnimatedGradientBackground";
 import { Suspense, use } from "react";
+import Skeleton from "./components/Skeleton/Skeleton";
+
 
 
 export default async function Home({searchParams,
@@ -26,7 +28,7 @@ export default async function Home({searchParams,
           <Search/>
       </header>
       <main>
-        <Suspense fallback={"loading.."}>
+        <Suspense fallback={<Skeleton/>}>
           <Table term={query as string} pageMove={String(pageMove)}></Table>
         </Suspense>
       </main>

@@ -13,8 +13,12 @@ const handleClick = ()=> {
     document.body.appendChild(newElement);
 
     setTimeout(()=> {
-        document.body.removeChild(newElement);
+       newElement.querySelector('.toast')?.classList.add('toast-hide');
     }, 1500)
+
+    setTimeout(()=> {
+        document.body.removeChild(newElement);
+    }, 1900)
 
 }
 
